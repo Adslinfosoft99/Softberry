@@ -1,0 +1,379 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_personal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/icon"
+                    android:fontFamily="@font/sanspro_semibold"
+                    android:text="Contact Details"
+                    android:textColor="@color/text_color"
+                    android:textSize="18dp" />
+
+                <RelativeLayout
+                    android:id="@+id/relMain"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/profile_background">
+
+                    <RelativeLayout
+                        android:id="@+id/relOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/icon1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey_circle">
+
+                            <com.github.siyamed.shapeimageview.CircularImageView
+                                android:id="@+id/addImg"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_margin="10dp"
+                                android:adjustViewBounds="true"
+                                android:background="@android:color/transparent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_location" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toRightOf="@+id/icon1"
+                            android:fontFamily="@font/sanspro_regular"
+                            android:text="Address"
+                            android:textColor="#828C91"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/txt_addressVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_address"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/icon1"
+                            android:fontFamily="@font/sanspro_semibold"
+                            android:text="Xxxxxxx"
+                            android:textColor="#232D3E"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@+id/txt_addressVal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#CAD2DA" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relOne"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/icon4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey_circle">
+
+                            <com.github.siyamed.shapeimageview.CircularImageView
+                                android:id="@+id/phoneImg"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_margin="10dp"
+                                android:adjustViewBounds="true"
+                                android:background="@android:color/transparent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_mobile" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toRightOf="@+id/icon4"
+                            android:fontFamily="@font/sanspro_regular"
+                            android:text="Contact Number"
+                            android:textColor="#828C91"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/txt_companyPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_phone"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/icon4"
+                            android:fontFamily="@font/sanspro_semibold"
+                            android:text="Xxxxxxx"
+                            android:textColor="#232D3E"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@+id/txt_companyPhone"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#CAD2DA" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relTwo"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/icon7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey_circle">
+
+                            <com.github.siyamed.shapeimageview.CircularImageView
+                                android:id="@+id/websiteIcon"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_margin="10dp"
+                                android:adjustViewBounds="true"
+                                android:background="@android:color/transparent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_web" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt_website"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toRightOf="@+id/icon7"
+                            android:fontFamily="@font/sanspro_regular"
+                            android:text="Website Link"
+                            android:textColor="#828C91"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/txt_websiteVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_website"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/icon7"
+                            android:fontFamily="@font/sanspro_semibold"
+                            android:text="Xxxxxxx"
+                            android:textColor="#232D3E"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@+id/txt_websiteVal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#CAD2DA" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relThree"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/icon8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey_circle">
+
+                            <com.github.siyamed.shapeimageview.CircularImageView
+                                android:id="@+id/portalIcon"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_margin="10dp"
+                                android:adjustViewBounds="true"
+                                android:background="@android:color/transparent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_web" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt_portal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toRightOf="@+id/icon8"
+                            android:fontFamily="@font/sanspro_regular"
+                            android:text="Portal Link"
+                            android:textColor="#828C91"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/txt_portalVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_portal"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/icon8"
+                            android:fontFamily="@font/sanspro_semibold"
+                            android:text="Xxxxxxx"
+                            android:textColor="#232D3E"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@+id/txt_portalVal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#CAD2DA" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relFour"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/icon10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey_circle">
+
+                            <com.github.siyamed.shapeimageview.CircularImageView
+                                android:id="@+id/emailImg"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_margin="10dp"
+                                android:adjustViewBounds="true"
+                                android:background="@android:color/transparent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_message" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt_companyEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toRightOf="@+id/icon10"
+                            android:fontFamily="@font/sanspro_regular"
+                            android:text="Email"
+                            android:textColor="#828C91"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/txt_companyEmailVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_companyEmail"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/icon10"
+                            android:fontFamily="@font/sanspro_semibold"
+                            android:text="Xxxxxxx"
+                            android:textColor="#232D3E"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relSix"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/relMain"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical">
+
+                    <fragment
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:context=".screens.ContactUsActivity" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        android:id="@+id/progress_view"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="0dp"
+        android:visibility="gone"
+        app:cpv_animAutostart="false"
+        app:cpv_color="@color/colorPrimaryDark"
+        app:cpv_indeterminate="true"
+        app:cpv_thickness="4dp" />
+
+</RelativeLayout>

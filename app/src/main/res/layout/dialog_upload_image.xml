@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_game"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/LABEL"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:scaleType="fitCenter"
+        android:text="Upload Image"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/label"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/txt_openCamera"
+        style="@style/LABEL"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:text="Open Camera"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/txt_openCamera"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/txt_openGallery"
+        style="@style/LABEL"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view1"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:text="Open Gallery"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/txt_openGallery"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/btn_CancelDialogUpload"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/view5"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

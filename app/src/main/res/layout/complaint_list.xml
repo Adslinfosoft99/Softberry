@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mtb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relThree"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bordershap"
+                android:orientation="horizontal">
+
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:justifyContent="space_evenly"> <!-- this attribute is from the underlying FlexboxLayout -->
+
+                    <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                        android:id="@+id/btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        ads:toggle_textColor="@color/white"
+                        ads:toggle_textSize="17dp"
+                        app:toggle_backgroundColor="@color/colorPrimaryDark"
+                        app:toggle_borderWidth="0dp"
+                        app:toggle_btnCornerRadius="10dp"
+                        app:toggle_circularCornerRadius="false"
+                        app:toggle_selectedBackgroundColor="@color/white"
+                        app:toggle_selectedTextColor="@color/colorPrimaryDark"
+                        app:toggle_text="Complaint Open"
+                        app:toggle_textAlignment="center" />
+
+                    <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                        android:id="@+id/btn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        ads:toggle_textColor="@color/white"
+                        ads:toggle_textSize="17dp"
+                        app:toggle_backgroundColor="@color/colorPrimaryDark"
+                        app:toggle_borderWidth="0dp"
+                        app:toggle_btnCornerRadius="10dp"
+                        app:toggle_circularCornerRadius="false"
+                        app:toggle_iconGravity="right"
+                        app:toggle_selectedBackgroundColor="@color/white"
+                        app:toggle_selectedTextColor="@color/colorPrimaryDark"
+                        app:toggle_text="Complaint Closed"
+                        app:toggle_textAlignment="center" />
+
+                </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtNoJob"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:fontFamily="@font/sanspro_regular"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="No Complaint Found"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:name="com.adsl.datatracksystem.frag.HistoryFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/white"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:visibility="gone"
+                app:layoutManager="LinearLayoutManager"
+                tools:context="com.loti92.datatracksystem.frag.HistoryFragment"
+                tools:listitem="@layout/fragment_item" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        android:id="@+id/progress_view"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="0dp"
+        android:visibility="gone"
+        app:cpv_animAutostart="false"
+        app:cpv_color="@color/loading_color"
+        app:cpv_indeterminate="true"
+        app:cpv_thickness="4dp" />
+</RelativeLayout>

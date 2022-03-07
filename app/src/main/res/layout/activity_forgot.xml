@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".screens.LoginActivity">
+
+    <ImageView
+        android:id="@+id/splashscreen"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_forgot_password" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/splashscreen"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sanspro_semibold"
+                    android:text="Forgot Your Password"
+                    android:textColor="@color/text_color"
+                    android:textSize="22dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rel1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sanspro_regular"
+                            android:gravity="center"
+                            android:text="Enter Your registered"
+                            android:textColor="@color/bold_text_color"
+                            android:textSize="11.5dp" />
+
+                        <TextView
+                            android:id="@+id/txt_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt_2"
+                            android:fontFamily="@font/sanspro_regular"
+                            android:text=" email"
+                            android:textColor="@color/loading_color"
+                            android:textSize="11.5dp" />
+
+                        <TextView
+                            android:id="@+id/txt_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt_3"
+                            android:fontFamily="@font/sanspro_regular"
+                            android:text=" or"
+                            android:textColor="@color/bold_text_color"
+                            android:textSize="11.5dp" />
+
+                        <TextView
+                            android:id="@+id/txt_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt_4"
+                            android:fontFamily="@font/sanspro_regular"
+                            android:text=" phone"
+                            android:textColor="@color/loading_color"
+                            android:textSize="11.5dp" />
+
+                        <TextView
+                            android:id="@+id/txt_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_5"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/sanspro_regular"
+                            android:text=" below to receive password"
+                            android:textColor="@color/bold_text_color"
+                            android:textSize="11.5dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rel1"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:padding="16dp"
+                            app:borderColor="@color/grey"
+                            app:borderWidth="1dp"
+                            app:cornerRadius="1dp">
+
+                            <ImageView
+                                android:id="@+id/id_icon"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="3dp"
+                                android:padding="3dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_message" />
+
+                            <EditText
+                                android:id="@+id/et_mobile"
+                                android:layout_width="fill_parent"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@null"
+                                android:fontFamily="@font/sanspro_regular"
+                                android:hint="Username or Email"
+                                android:inputType="number|textEmailAddress"
+                                android:maxLines="1"
+                                android:padding="4dp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/grey"
+                                android:textSize="13dp" />
+                        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/border_button1"
+                    android:fontFamily="@font/sanspro_semibold"
+                    android:text="Send"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        android:id="@+id/progress_view"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="0dp"
+        android:visibility="gone"
+        app:cpv_animAutostart="false"
+        app:cpv_color="@color/loading_color"
+        app:cpv_indeterminate="true"
+        app:cpv_thickness="4dp" />
+</RelativeLayout>

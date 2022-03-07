@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "519141814476",
+    "project_id": "softberry-6f364",
+    "storage_bucket": "softberry-6f364.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519141814476:android:2473aea07c01e59da55269",
+        "android_client_info": {
+          "package_name": "com.adslinfosoft.softberry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519141814476-ft71p2ovp6l06en15umv6osbh3qakrjs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adslinfosoft.softberry",
+            "certificate_hash": "113a8f87afa24734833088749e1b128b9721ff4c"
+          }
+        },
+        {
+          "client_id": "519141814476-ceoo5j9j27acobg4qmg4urasffuob589.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWsZK2FaB4abLFLp4tR9REwS8ESrebB7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519141814476-ceoo5j9j27acobg4qmg4urasffuob589.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

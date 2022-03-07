@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Softberry</string>
+    <string name="action_settings">Job Images</string>
+    <string name="title_activity_login">Sign in</string>
+    <!--<string name="google_app_id">605730604418</string>-->
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">UserName</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_mobile">Mobile Number</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_forgot">Processed</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_contact_us">Map</string>
+    <string name="title_activity_connect">ConnectActivity</string>
+    <string name="title_activity_inquiry">InquiryActivity</string>
+    <string name="title_activity_job_detail">JobDetailActivity</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+
+
+    <!-- gcm strings -->
+    <string name="gcm_registered">From GCM- device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM- device successfully unregistered!</string>
+    <string name="gcm_message">From GCM- you got message!</string>
+    <string name="gcm_error">From GCM- error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM- recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM- server deleted %1$d pending messages!</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_forgot">Forgot Password</string>
+    <string name="title_activity_showimage">Show Image</string>
+    <string name="title_activity_comment">Quick Comments</string>
+    <string name="title_activity_jobimages">Job Images</string>
+    <string name="title_activity_jobpost">Job Post</string>
+    <string name="business_prompt">Select Job No</string>
+    <string name="txt_UserNameError">User Name and Password Mis Match..\nPlease Try Again</string>
+
+    <string name="action_share">Share</string>
+    <string name="action_comment">Comment</string>
+    <string name="insuffice_space">Insufficient memory</string>
+    <string name="no_sd_card">sd card not available</string>
+
+    <string name="txt_EnterOldpass">Please Enter Old Password</string>
+    <string name="txt_EnterCurrpass">Please Enter Correct Old Password</string>
+    <string name="txt_EnterNewpass">Please Enter New Password</string>
+    <string name="txt_EnterRepass">Please Re-Enter Password</string>
+    <string name="txt_PassNotMatch">Password not matched!</string>
+    <string name="txt_PasswordChange">Password Changed successfully</string>
+
+    <string name="view"><u>Click to View</u></string>
+</resources>

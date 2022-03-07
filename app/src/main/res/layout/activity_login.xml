@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".screens.LoginActivity">
+
+    <ImageView
+        android:id="@+id/splashscreen"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_login_image" />
+
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/splashscreen"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sanspro_semibold"
+                    android:gravity="center"
+                    android:text="Welcome to "
+                    android:textColor="@color/text_color"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/txt_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txt_2"
+                    android:fontFamily="@font/sanspro_semibold"
+                    android:text="Softberry"
+                    android:textColor="@color/loading_color"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/txt_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2.5dp"
+                    android:fontFamily="@font/sanspro_regular"
+                    android:text="Login softberry to access your details"
+                    android:textColor="@color/text_color"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:padding="16dp"
+                        app:borderColor="@color/grey"
+                        app:borderWidth="1dp"
+                        app:cornerRadius="1dp">
+
+                        <ImageView
+                            android:id="@+id/id_icon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="3dp"
+                            android:padding="3dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_my_account" />
+
+                        <EditText
+                            android:id="@+id/email"
+                            android:layout_width="fill_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@null"
+                            android:fontFamily="@font/sanspro_regular"
+                            android:hint="Username"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="3dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textColorHint="@color/grey"
+                            android:textSize="14dp" />
+                    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:padding="16dp"
+                        app:borderColor="@color/grey"
+                        app:borderWidth="1dp"
+                        app:cornerRadius="1dp">
+
+                        <ImageView
+                            android:id="@+id/password_icon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="3dp"
+                            android:padding="3dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_password" />
+
+
+                        <com.subhrajyoti.passwordview.PasswordView
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/sanspro_regular"
+                            android:hint="Password"
+                            android:inputType="text|number"
+                            android:maxLines="1"
+                            android:padding="3dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            android:textSize="14dp"
+                            app:eyeTint="@android:color/transparent" />
+
+                    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/id_icon2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="3dp"
+                        android:padding="3dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_eye" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_forgot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sanspro_regular"
+                    android:gravity="right"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/loading_color"
+                    android:textSize="12dp" />
+
+
+                <Button
+                    android:id="@+id/email_sign_in_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/border_button1"
+                    android:fontFamily="@font/sanspro_semibold"
+                    android:text="SUBMIT"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        android:id="@+id/progress_view"
+        android:layout_width="48dp"
+        android:layout_height="54dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="0dp"
+        android:visibility="gone"
+        app:cpv_animAutostart="false"
+        app:cpv_color="@color/colorPrimaryDark"
+        app:cpv_indeterminate="true"
+        app:cpv_thickness="4dp" />
+</RelativeLayout>

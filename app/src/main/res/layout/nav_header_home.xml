@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lout_login_header"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:background="@color/loading_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="40dp">
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:src="@mipmap/maleicon"
+        android:adjustViewBounds="true"
+        app:siBorderColor="@color/white"
+        app:siBorderWidth="1.0dp"
+        app:siRadius="40dp"
+        app:siSquare="true" />
+
+    <TextView
+        android:id="@+id/tv_login_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sanspro_semibold"
+        android:inputType="textCapSentences"
+        android:gravity="left"
+        android:text="xxxxxxxxxxxx"
+        android:textColor="@color/white"
+        android:textSize="19dp" />
+
+    <TextView
+        android:id="@+id/tv_emailId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login_name"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/sanspro_regular"
+        android:inputType="textCapSentences"
+        android:gravity="left"
+        android:text="xxxxxxxxxxxx"
+        android:textColor="@color/white"
+        android:textSize="13dp" />
+
+
+</RelativeLayout>
